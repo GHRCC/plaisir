@@ -1,9 +1,9 @@
 import { type } from "os";
 import React from "react";
 
-type ButtonProps = {
+export type ButtonProps = {
   onClick: () => void;
-  children: string;
+  children: React.ReactNode;
 };
 
 const Button = (props: ButtonProps) => {

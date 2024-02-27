@@ -8,7 +8,6 @@ export type LayoutProps = {
 export function Layout({ children }: LayoutProps) {
   return (
     <div>
-      <Title text={"Título"} />
       <AppBar />
       {children}
     </div>

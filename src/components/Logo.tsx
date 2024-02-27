@@ -1,9 +1,13 @@
 import { FaHeart } from "react-icons/fa";
 
-export function Logo() {
+export type LogoProps = {
+  size?: string;
+};
+
+export function Logo({ size }: LogoProps) {
   return (
     <span className="text-primary">
-      <FaHeart />
+      <FaHeart size={size} />
     </span>
   );
 }
