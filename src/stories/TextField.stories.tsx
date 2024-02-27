@@ -15,7 +15,9 @@ export const Example: Story = {
       <TextField
         placeholder="Digite seu nome"
         value=""
-        onChange={function (value: string) {}}
+        onChange={(value: string) => {
+          value: "";
+        }}
       />
     );
   },

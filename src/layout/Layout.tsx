@@ -1,3 +1,4 @@
+import Title from "@/components/Title";
 import { AppBar } from "./AppBar";
 
 export type LayoutProps = {
@@ -7,6 +8,7 @@ export type LayoutProps = {
 export function Layout({ children }: LayoutProps) {
   return (
     <div>
+      <Title text={"Título"} />
       <AppBar />
       {children}
     </div>
