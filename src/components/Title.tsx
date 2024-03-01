@@ -1,12 +1,14 @@
 import React from "react";
 
 type TitleProps = {
-  text: string;
+  children: React.ReactNode;
 };
 
 const Title = (props: TitleProps) => {
   return (
-    <div className="bg-primary my-0 mx-0 flex items-center">{props.text}</div>
+    <h1 className="text-center font-bold text-xl md:text-2xl">
+      {props.children}
+    </h1>
   );
 };
 

@@ -7,18 +7,12 @@ type TextFieldProps = {
 };
 
 const TextField = (props: TextFieldProps) => {
-  const [text, setText] = useState(props.value);
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const newValue = event.target.value;
-    setText(newValue);
-    props.onChange(newValue);
-  };
-
   return (
     <input
       value={props.value}
       placeholder={props.placeholder}
-      onChange={handleChange}
+      onChange={(event) => props.onChange(event.target.value)}
+      className="border-2 rounded-lg focus:border-primary outline-none p-2 "
     />
   );
 };
